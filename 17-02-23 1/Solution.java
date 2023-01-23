@@ -3,11 +3,11 @@ During the code-based test of Java, Peter has been assigned a task to implement 
 
 Given that the Current Account Balance is 20000, it is expected to perform the withdrawl if amount to be withdrawn is less than or equal to 20000 and message to be displayed is:
 
-Hi Mr./Ms. XXX! Your Account Balance after withdrawl is YYYYY.
+Hi Mr./Ms. XXXX! Your Account Balance after withdrawl is YYYYY.
 
 If the amount to be withdrawn is greater than the Current Account Balance, then the message displayed is:
 
-Hi Mr./Ms. XXX! Insufficient Funds! You can not withdraw AAAAA.
+Hi Mr./Ms. XXXX! Insufficient Funds! You can not withdraw AAAAA.
 
 Input Format
 
@@ -25,7 +25,7 @@ Account Number is a 10 digit number
 
 Output Format
 
-**Hi Mr./Ms. XXX!
+**Hi Mr./Ms. XXXX!
 
 Your Account Balance after withdrawl is YYYYY.**
 
@@ -51,14 +51,13 @@ Hi Ms. Chandani!
 Insufficient Funds! You can not withdraw 25000.
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long acn = sc.nextLong();
+        // long acn = sc.nextLong();
         sc.nextLine();
         String name = sc.nextLine();
         char gen = sc.next().charAt(0);
@@ -93,5 +92,6 @@ public class Solution {
                 System.out.println("Insufficient Funds! You can not withdraw " + wamt + ".");
             }
         }
+        sc.close();
     }
 }

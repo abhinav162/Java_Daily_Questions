@@ -41,7 +41,6 @@ Rate This Challenge:
 More
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -56,6 +55,7 @@ public static void main(String[] args) {
 
     if (w < 0.01 || w > 1000) {
       System.out.print("Invalid Input");
+      sc.close();
       return;
     }
 
@@ -74,5 +74,6 @@ public static void main(String[] args) {
           break;
       }
     }
+    sc.close();
   }
 }

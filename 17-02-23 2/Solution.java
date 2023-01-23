@@ -34,7 +34,6 @@ More
 
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -45,10 +44,12 @@ public class Solution {
         int cube_root = (int)Math.round(Math.cbrt(N));
         if (Math.pow(cube_root,3) == N) {
             System.out.println("Perfect Cube");
+            sc.close();
             return;
         }
         else {
             System.out.println("Not Perfect Cube");
+            sc.close();
             return;
         }
     }

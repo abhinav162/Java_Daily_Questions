@@ -22,7 +22,6 @@ Sample Output 0
 6
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -33,5 +32,6 @@ public class Solution {
         int fr = get.nextInt();
         
         System.out.print(tc/fr);
+        get.close();
     }
 }

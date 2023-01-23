@@ -42,28 +42,25 @@ Sample Output 1
 0.0
 */
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Solution {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       double p =  sc.nextDouble();
-       double r = sc.nextDouble();
-       double t = sc.nextDouble();
-       double n = sc.nextDouble();
-       
-       if(r < 0 || t < 0 || n < 0 || p < 0)
-       {
-        System.out.print(0.0);
-        return;
-       }
-        
-       double amt = (p * (Math.pow(1 + (r/100),n * t)));
-       double ci = amt - p;
-       System.out.print(ci);
+        Scanner sc = new Scanner(System.in);
+        double p = sc.nextDouble();
+        double r = sc.nextDouble();
+        double t = sc.nextDouble();
+        double n = sc.nextDouble();
+
+        if (r < 0 || t < 0 || n < 0 || p < 0) {
+            System.out.print(0.0);
+            sc.close();
+            return;
+        }
+
+        double amt = (p * (Math.pow(1 + (r / 100), n * t)));
+        double ci = amt - p;
+        System.out.print(ci);
+        sc.close();
     }
 }

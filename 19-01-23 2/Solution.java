@@ -39,11 +39,7 @@ Enter number 1: 6 Enter number 2: 3 Enter Arthmitic operator : $ Invalid arithme
 
 */
 
-import java.io.*;
-import java.math.*;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
 
 public class Solution {
 
@@ -73,5 +69,6 @@ public class Solution {
       default:
         System.out.print("Invalid arithmetic operators");
     }
+    sc.close();
   }
 }

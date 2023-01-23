@@ -30,11 +30,7 @@ Not Multiple
 
 */
 
-import java.io.*;
-import java.math.*;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
 
 public class Solution {
 
@@ -53,5 +49,6 @@ public static void main(String[] args) {
         System.out.println("Not Multiple");
       }
     }
+    sc.close();
   }
 }

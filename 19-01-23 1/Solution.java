@@ -30,13 +30,7 @@ Sample Output 1
 
 Invalid Input
 */
-
-import java.io.*;
-import java.math.*;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
-
 public class Solution {
 
   public static void main(String[] args) {
@@ -47,9 +41,11 @@ public class Solution {
 
     if (a < 0 || b < 0 || c < 0) {
       System.out.print("Invalid Input");
+      sc.close();
       return;
     }
 
     System.out.printf("%d*%d*%d", a, b, c);
+    sc.close();
   }
 }

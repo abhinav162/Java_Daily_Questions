@@ -21,11 +21,7 @@ Sample Output 0
 Good Morning Amit Kumar
 */
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Solution {
 
@@ -33,5 +29,6 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         String name = sc.nextLine();
         System.out.println("Good Morning " + name);
+        sc.close();
     }
 }
