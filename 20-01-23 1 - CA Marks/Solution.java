@@ -48,10 +48,10 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner get = new Scanner(System.in);
-        int cbt1 = get.nextInt();
-        int cbt2 = get.nextInt();
-        int proj = get.nextInt();
-        int quiz = get.nextInt();
+        double cbt1 = get.nextDouble();
+        double cbt2 = get.nextDouble();
+        double proj = get.nextDouble();
+        double quiz = get.nextDouble();
         
         if(cbt1 >= 0 && cbt1 <= 20 && proj >= 0 && proj <= 15 && quiz >= 0 && quiz <= 5 )
         {
