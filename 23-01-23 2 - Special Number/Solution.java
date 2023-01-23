@@ -37,24 +37,17 @@ not a special two digit number
 */
 
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        int num = sc.nextInt(),temp = num;
         
         if(num < 10 || num > 99)
         {
             System.out.println("invalid input");
-            return;
-        }
-        
-        if(num == 59)
-        {
-            System.out.print("special two digit number");
+            sc.close();
             return;
         }
         
@@ -66,7 +59,9 @@ public class Solution {
             prod = prod * rem;
             num = num/10;
         }
-        if(sum == prod)
+        
+        boolean check = (sum + prod) == temp;
+        if(check)
         {
             System.out.print("special two digit number");
         }
@@ -74,5 +69,6 @@ public class Solution {
         {
             System.out.print("not a special two digit number");
         }
+        sc.close();
     }
 }

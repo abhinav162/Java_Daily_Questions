@@ -36,7 +36,6 @@ Sample Output 1
 59.9
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -58,5 +57,7 @@ public class Solution {
             default:
                 System.out.printf("INVALID CHOICE");
         }
+
+        sc.close();
     }
 }
