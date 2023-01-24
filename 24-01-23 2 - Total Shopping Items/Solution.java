@@ -24,7 +24,6 @@ Sample Output 0
 15
 */
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -34,5 +33,6 @@ public class Solution {
         int neha = sc.nextInt();
         int nisha = sc.nextInt();
         System.out.print(neha+nisha);
+        sc.close();
     }
 }
