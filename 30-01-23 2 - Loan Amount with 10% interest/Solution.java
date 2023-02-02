@@ -39,5 +39,6 @@ public class Solution {
 
         System.out.println(decimalFormat.format(totalAmount));
         System.out.println(decimalFormat.format(emi));
+        sc.close();
     }
 }
