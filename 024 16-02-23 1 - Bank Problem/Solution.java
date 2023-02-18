@@ -45,55 +45,56 @@
 // A102
 // */
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-class ProvidentFund{
-    private String name;
-    private char id;
-    private String idNo;
-    private String accountNo;
-    private static int aCount = 101;
-    private static int pCount = 101;
-    public ProvidentFund(String name, char id, String idNo){
-        this.name = name;
-        this.id = id;
-        this.idNo = idNo;
-        if(id == 'A'){
-            this.accountNo = "A"+aCount;
-            aCount++;
-        }
-        else{
-            this.accountNo = "P"+pCount;
-            pCount++;
-        }
-    }
-    public String getAccountNo(){
-        return this.accountNo;
-    }
-}
+////// 1st Solution //////
+// import java.io.*;
+// import java.util.*;
+// import java.text.*;
+// import java.math.*;
+// import java.util.regex.*;
 
-public class Solution {
+// class ProvidentFund{
+//     private String name;
+//     private char id;
+//     private String idNo;
+//     private String accountNo;
+//     private static int aCount = 101;
+//     private static int pCount = 101;
+//     public ProvidentFund(String name, char id, String idNo){
+//         this.name = name;
+//         this.id = id;
+//         this.idNo = idNo;
+//         if(id == 'A'){
+//             this.accountNo = "A"+aCount;
+//             aCount++;
+//         }
+//         else{
+//             this.accountNo = "P"+pCount;
+//             pCount++;
+//         }
+//     }
+//     public String getAccountNo(){
+//         return this.accountNo;
+//     }
+// }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
-        for(int i=0;i<n;i++){
-            String name = sc.nextLine();
-            char id = sc.next().charAt(0);
-            sc.nextLine();
-            String idNo = sc.nextLine();
-            ProvidentFund pf = new ProvidentFund(name,id,idNo);
-            System.out.println(pf.getAccountNo());
-        }
-    }
-}
+// public class Solution {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         sc.nextLine();
+//         for(int i=0;i<n;i++){
+//             String name = sc.nextLine();
+//             char id = sc.next().charAt(0);
+//             sc.nextLine();
+//             String idNo = sc.nextLine();
+//             ProvidentFund pf = new ProvidentFund(name,id,idNo);
+//             System.out.println(pf.getAccountNo());
+//         }
+//     }
+// }
 
-
+////// 2nd Solution //////
 // import java.io.*;
 // import java.util.*;
 // class Pf
@@ -150,3 +151,33 @@ public class Solution {
 //         }
 //     }
 // }
+
+
+////// 3rd Solution - All test cases passed //////
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+        int p=1;
+        int a=1;
+        for(int i=0;i<n;i++){
+            String name = sc.nextLine();
+            String c = sc.nextLine();
+           
+            if(c.equalsIgnoreCase("A")){
+               String acc= sc.nextLine();
+               System.out.println("A10"+(a));
+                a++;
+            }
+            else{
+                String x=sc.nextLine();
+               System.out.println("P10"+(p));
+                p++;
+            }
+        }
+    }
+}
